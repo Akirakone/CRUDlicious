@@ -1,0 +1,5 @@
+C:\Users\Akira\Desktop\C#\CRUDlicious\crud\obj\Debug\netcoreapp3.1\crud.csprojAssemblyReference.cache
+C:\Users\Akira\Desktop\C#\CRUDlicious\crud\obj\Debug\netcoreapp3.1\crud.AssemblyInfoInputs.cache
+C:\Users\Akira\Desktop\C#\CRUDlicious\crud\obj\Debug\netcoreapp3.1\crud.AssemblyInfo.cs
+C:\Users\Akira\Desktop\C#\CRUDlicious\crud\obj\Debug\netcoreapp3.1\crud.csproj.CoreCompileInputs.cache
+C:\Users\Akira\Desktop\C#\CRUDlicious\crud\obj\Debug\netcoreapp3.1\crud.MvcApplicationPartsAssemblyInfo.cache

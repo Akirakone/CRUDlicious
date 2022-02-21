@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body
+    class="p-3 mb-2 bg-secondary text-white nes-text text-left container d-flex justify-content-center align-items-center">
+    <div class="nes-container is-dark">
+        <div style=" padding: 1rem;" class="nes-field is-inline">
+
+            <form action="createdish" method="post">
+
+                <h1 style="color: white;">Add Dish</h1>
+                <div class="form-group">
+                    <label for="chef">Chefs Name:</label>
+                    <input type="text" name="chef" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name of the Dish:</label>
+                    <input type="text" name="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="calories"># of Calories:</label>
+                    <input type="text" name="calories" class="form-control">
+                </div>
+                <div>
+                    <label for="tastiness">Tastiness</label>
+                    <select asp-for="tastiness">
+                        <option hidden selected disabled>Level</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <span asp-validation-for="tastiness" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description: </label>
+                    <textarea class="align-middle" name="description" cols="40" rows="3"></textarea>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <input type="submit" value="Add Dish" class="btn btn-primary">
+                    <a href="dashboard" style="color: white;" class="btn btn-primary">Home</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

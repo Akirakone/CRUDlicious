@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model monsters
+<body>
+    <div>
+        <h1 style="background-color:#05588b;" class="text-white">Welcome to CRUDelicious!
+            <a href="createform" style="color: white;" class="btn btn-primary">Add Dish</a>
+            
+        </h1>
+    </div>
+    <div class="table-responsive">
+       <h2>Recent Dishes</h2>
+        <table class="text-center">
+            @{
+                foreach (Dish d in ViewBag.AllDishes)
+                {
+                    <tr>
+                        <td><a href="/viewDish/@d.dishid">@d.name</a> by @d.chef</td>
+                    </tr>
+                }
+
+            }
+        </table>
+    </div>
+</body>
+
+</html>
